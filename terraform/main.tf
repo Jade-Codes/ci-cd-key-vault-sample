@@ -14,3 +14,9 @@ terraform {
 provider "azurerm" {
   features {}
 }
+
+
+resource "azurerm_resource_group" "key_vault_ci_cd_sample" {
+  name     = "key-vault-ci-cd-sample-rg"
+  location = "UK South"
+}
